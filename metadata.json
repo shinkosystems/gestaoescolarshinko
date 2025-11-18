@@ -1,0 +1,5 @@
+{
+  "name": "Gestão Escolar",
+  "description": "Uma aplicação para gerenciamento de horários escolares, professores e turmas, integrada com Supabase e com funcionalidades de login, registro e uma home page com navegação.",
+  "requestFramePermissions": []
+}
