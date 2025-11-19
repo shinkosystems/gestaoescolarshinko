@@ -51,7 +51,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ userProfile, onProfileUpdate,
     const generateFriendlyError = (errorMessage: string, context: 'upload' | 'update') => {
         const prefix = context === 'upload' ? 'Falha no upload da imagem' : 'Falha ao atualizar perfil';
         if (errorMessage && (errorMessage.toLowerCase().includes('rls') || errorMessage.toLowerCase().includes('policy') || errorMessage.toLowerCase().includes('permission'))) {
-            return `${prefix}. Verifique as permissões de segurança (Row Level Security) no Supabase. O usuário logado precisa ter permissão para atualizar a própria linha na tabela "usuarios".`;
+            return `${prefix}. Verifique as permissões de segurança (Row Level Security) no Supabase. O usuário logado precisa ter permissão para atualizar a própria linha na tabela "usuarios"!`;
         }
         return `${prefix}: ${errorMessage}`;
     };
